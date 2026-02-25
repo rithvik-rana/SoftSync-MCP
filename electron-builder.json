@@ -1,0 +1,16 @@
+{
+    "appId":"com.aditya.softsync",
+    "files": ["dist-react","dist-electron"],
+    "icon": "./resources/desktopIcon.png",
+    "extraResources": ["dist-electron/preload.cjs",".env"],
+    "mac": {
+        "target":"dmg"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": ["portable","msi"]
+    }
+}
